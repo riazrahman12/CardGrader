@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgcolor"
+    tools:context=".MainActivity">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+
+
+            <!-- add Camera Button to open the Camera-->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="Please scan your card for grading" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/camera_button"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#BA1717"
+                android:text="START GRADING" />
+
+            <!-- add ImageView to display the captured image-->
+            <!--            <ImageView-->
+            <!--                android:id="@+id/click_image"-->
+            <!--                android:layout_width="350dp"-->
+            <!--                android:layout_height="450dp"-->
+            <!--                android:layout_marginLeft="15dp"-->
+            <!--                android:layout_marginTop="70dp"-->
+            <!--                android:layout_marginBottom="10dp" />-->
+            <!--            &lt;!&ndash;                app:srcCompat="@mipmap/custom_rotated"&ndash;&gt;-->
+            <ImageView
+                android:id="@+id/click_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds = "true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"/>
+            <!--                app:srcCompat="@mipmap/custom_rotated"-->
+
+
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/LinearLayout02"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_width="match_parent">-->
+            <!--                <Button-->
+            <!--                    android:id="@+id/Button02"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1" android:text="Apply">-->
+            <!--                </Button>-->
+            <!--                <Button-->
+            <!--                    android:id="@+id/Button03"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="Cancel">-->
+            <!--                </Button>-->
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/LinearLayout3"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/status_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:translationX="10dp"
+                    android:translationY="0dp"
+                    android:layout_weight="1"
+                    android:text="Status"
+                    android:textColor="@color/purple_700"/>
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:translationX="0dp"
+                    android:layout_weight="1"
+                    android:translationY="0dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout4"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/ratio_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:translationX="10dp"
+                    android:translationY="0dp"
+                    android:layout_weight="1"
+                    android:text="Ratio"
+                    android:textColor="@color/purple_700"/>
+                <TextView
+                    android:id="@+id/ratio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:translationX="0dp"
+                    android:layout_weight="1"
+                    android:translationY="0dp" />
+
+            </LinearLayout>
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/LinearLayout5"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_width="match_parent">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/ratio_exact_text"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:ems="5"-->
+            <!--                    android:inputType="textPersonName"-->
+            <!--                    android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+            <!--                    android:translationX="10dp"-->
+            <!--                    android:translationY="0dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="Ratio Exact"-->
+            <!--                    android:textColor="@color/purple_700"/>-->
+            <!--                <TextView-->
+            <!--                    android:id="@+id/ratio_exact"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text=""-->
+            <!--                    android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+            <!--                    android:translationX="0dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:translationY="0dp" />-->
+
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/LinearLayout11"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/grading_direction_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:translationX="10dp"
+                    android:translationY="0dp"
+                    android:layout_weight="1"
+                    android:text="Grading Axis"
+                    android:textColor="@color/purple_700"/>
+                <TextView
+                    android:id="@+id/grading_direction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:translationX="0dp"
+                    android:layout_weight="1"
+                    android:translationY="0dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayouthorizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/horizontal_ratio_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:translationX="10dp"
+                    android:translationY="0dp"
+                    android:layout_weight="1"
+                    android:text="Horizontal ratio"
+                    android:textColor="@color/purple_700"/>
+                <TextView
+                    android:id="@+id/horizontal_ratio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:translationX="0dp"
+                    android:layout_weight="1"
+                    android:translationY="0dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutvertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="0dp">
+
+                <TextView
+                    android:id="@+id/vertical_ratio_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:translationX="10dp"
+                    android:translationY="0dp"
+                    android:layout_weight="1"
+                    android:text="Vertical ratio"
+                    android:textColor="@color/purple_700"/>
+                <TextView
+                    android:id="@+id/vertical_ratio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:translationX="0dp"
+                    android:layout_weight="1"
+                    android:translationY="0dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutvertical_furry"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/furry_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:translationX="10dp"
+                    android:translationY="0dp"
+                    android:layout_weight="1"
+                    android:text="Frayed"
+                    android:textColor="@color/purple_700"/>
+                <TextView
+                    android:id="@+id/furry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:translationX="0dp"
+                    android:layout_weight="1"
+                    android:translationY="0dp" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
